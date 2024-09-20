@@ -15,7 +15,8 @@ const btnEl = document.getElementById("btn-el")
 btnEl.addEventListener("click", function() {
     let num = inputNum.value
     calculateLength()
-    
+    calculateVolume()
+    calculateMass()
 })
 
 function calculateLength() {
@@ -54,4 +55,5 @@ function getValue() {
 
 function print(element, num, arg, res, argAlt, resAlt) {
     element.innerHTML = `<p> ${num} ${arg} = ${res} ${argAlt} | ${num} ${argAlt} = ${resAlt} </p> `
+    console.log("Printer running on")
 }
